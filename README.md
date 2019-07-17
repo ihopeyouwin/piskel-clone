@@ -1,5 +1,6 @@
 # piskel-clone
-check this out on gh-pages, though is very basic [clone](https://ihopeyouwin.github.io/piskel-clone/landing.html)
+check this out on gh-pages, though is very basic [clone(link)](https://ihopeyouwin.github.io/piskel-clone/landing.html)</br>
+sorry to say, but works properly only on google chrome</br>
 </br>
 </br>
 
