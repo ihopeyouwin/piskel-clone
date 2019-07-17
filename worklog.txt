@@ -1,0 +1,7 @@
+Start time 	End time 	time spent 	feature
+May 27 	Jun 2 	23h 	base structure of the project(palette)
+Jun 3 	Jun 10 	10h 	mechanics reorder to make app work through canvas
+Jun 11 	Jun 20 	12h     couple of tools add pen refactor canvas optimization
+Jun 21 	Jun 28 	12h 	 	layout change converter canvas to png, preview start
+Jun 29 	Jun 30 	27h 	frames line, preview animation. gif save.
+Total: 84h

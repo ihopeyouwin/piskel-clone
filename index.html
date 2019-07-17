@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Piskelclone</title>
+	<link rel="stylesheet" href="src/styles/style.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+</head>
+<body>
+	<header>
+		<nav class="menu">
+		</nav>
+		<div class="name"><p>PISKEL CLONE - BRIGHT THEME VARIANT</p></div>
+	</header>
+	<main>
+		<section class="right">
+			<ul class="mark1">
+				<li id="pen"><i class="fas fa-pen"></i>pen</li>
+				<li id="erazer"><i class="fas fa-eraser"></i>erazer</li>	
+		        <li id="bucket"><i class="fas fa-fill-drip"></i>Paint bucket</li>
+		        <li id="colours"><i class="fas fa-palette"></i>Choose color</li>
+		        <li id="circledraw"><i class="far fa-circle"></i></i>Draw Circle</li>
+				<li id="tonnel"><i class="fas fa-archway"></i>Draw Tonnel</li>
+				<li id="duplicate"><i class="fas fa-clone"></i>duplicate</li>
+				<li id="clear"><i class="fas fa-chalkboard"></i>clear current</li>	
+		    </ul>
+			<div class="mark2">
+				<div class="p2item">
+					<h4 class="tex">current color</h4>
+					<div class="smcirccur"></div>
+				</div>
+				<div class="prevColors">
+					<h4 class="tex">prev color</h4>
+					<div id="smcircprev"></div>
+				</div>
+				<div class="p2itemflex">
+					<h4 class="tex1">common colors</h4>
+					<div class="smcircred"></div>
+					<div class="smcircora"></div>
+					<div class="smcircgre"></div>
+					<div class="smcircblu"></div>
+					<div class="smcircyel"></div>
+				</div>
+				<div id="frm">
+					<h4>current framerate:  </h4>
+					<h4><div id="framerate"></div></h4>
+					<h4><div id="testresolution"></div></h4>
+				</div>
+				<div class="slidecontainer">
+					<h4>drag to change it</h4>
+					<input type="range" min="1" max="24" value="1" class="slider" id="myRange">
+				</div>
+				<div id="properties">
+					<div class="size_pen" id="size_tool">
+		              <label for="sizes">Pen Size</label>
+		              <select name="sizes" id="sizes_pen">
+		                <option class="option" value="1" id="size">1 px</option>
+		                <option class="option" value="2" id="size">2 px</option>
+		                <option class="option" value="3" id="size">3 px</option>
+		                <option class="option" value="4" id="size">4 px</option>
+		              </select>
+		            </div>
+					<div class="size_select" id="size_tool">
+		              <label for="sizes">Canvas Size</label>
+		              <select name="sizes" id="sizes_canvas">
+		                <option class="option" value="32" id="size">32 px</option>
+		                <option class="option" value="64" id="size">64 px</option>
+		                <option class="option" value="128" id="size">128 px</option>
+		              </select>
+		            </div>
+		            <div id="mouseposition" class="container">
+		            	<p><label>MouseX : </label><label id="mousex"> 0 </label></p>
+		            	<p><label>MouseY : </label><label id="mousey"> 0 </label></p>
+		            </div>
+				</div>
+			</div>
+		</section>
+		<div class="left-column">
+            <ul class="list-group" id="sortable">
+            	<li class="prevframe" draggable="true" id="frame">
+            		<img src="" id="imgconv0" class="imgconv" alt="1">
+            		<button class="deleteBtn framesButtons" id="deleteButton0"></button>
+            	</li>
+            </ul>
+            <button class="framea" id="framea">
+            	Add new<br/>frame
+            </button>
+        </div>
+        <section id="canvascontainer">
+        	<canvas id="maincanvas0" class="maincanvas"></canvas>
+        </section>
+		<section class="whitespace">   
+	    	<div id="preview"></div>
+	    	<div class="extra">
+				<h3>save image</h3>
+				<a id="saveToImage" class="btnsave">Download img</a>
+				<a id="saveToGif" class="btnsave">Download GIF</a>
+			</div>
+		</section>
+	</main>
+	<script src="dist/main.js"></script>
+</body>

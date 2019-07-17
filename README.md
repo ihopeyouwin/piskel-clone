@@ -1,5 +1,5 @@
 # piskel-clone
-
+check this out on gh-pages, though is very basic [clone](https://ihopeyouwin.github.io/piskel-clone/landing.html)
 </br>
 </br>
 
